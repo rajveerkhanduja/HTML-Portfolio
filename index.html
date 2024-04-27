@@ -1,20 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porfolio</title>
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
+
 <body>
-    <h1>Rajveer Singh Khanduja's Porfolio</h1>
-    <h2>I'm a Web Developer and a Student</h2>
-    <hr />
-    <h3><a href="./public/movie-ranking.html">Movie Ranking Project</a></h3>
-    <img src="./assets/images/Screenshot 2023-07-18 195710.png" height="200"/>
-    <h3><a href="./public/birthday-invite.html">Birthday Invite Project</a></h3>
-    <img src="./assets/images/Screenshot 2023-07-18 195553.png" height="200"/>
-    <hr />
-    <a href="./public/about.html">About Me</a>
-    <a href="./public/contact.html">Contact Me</a>
+    <heading class="header">
+        <a href="#home" class="logo">Rajveer Singh <span>Khanduja</span></a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </heading>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>It's <span>Rajveer Singh Khanduja</span></h1>
+            <h3 class="text-animation">
+                I'm a <span></span>
+            </h3>
+            <p>Hello! I'm Rajveer Singh Khanduja, currently pursuing my <span>BTech</span> at SRM University. My passion lies in
+                web development, where I enjoy creating innovative projects that blend creativity with technical
+                prowess. With each endeavor, I strive for excellence, transforming ideas into captivating digital
+                experiences. Join me on my journey as I navigate the world of <span>Web Development</span>, <span>Blockchain</span>showcasing
+                my dedication and enthusiasm for mastering this craft.
+
+            </p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/rajveer-singh-khanduja/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/rajveerskhandujaa/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/rajveerkhanduja" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://twitter.com/rajee_khanduja" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <a href="#about" class="btn">Read More</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3 class="text-animation"><span></span></h3>
+            <p>Greetings, I'm Rajveer Singh Khanduja, a second-year undergraduate student majoring in Computer Science and Engineering at <span>SRM University</span>.
+                My tech stack encompasses a range of languages, including C++, HTML, CSS, JS, and Python, with a current focus on learning Solidity.
+                I come with a rich hackathon experience, having been a finalist in <span>SIH 2023</span>, securing the 5th position in <span>Geekathon 1.0</span>, and
+                participating in <span>The Great Indian HackFest 2k24</span>. Some noteworthy projects in my portfolio include the SnakeGame, a Personal Portfolio,
+                ChainRx (a WEB-3 based Supply Chain Management System), and GeMWatch Bharat for SIH. I'm ready to bring my enthusiasm and expertise to
+                the table, and I'm looking forward to a collaborative and innovative hackathon experience.
+            </p>
+            <a href="#" class="btn">Read Less</a>
+        </div>
+        <div class="about-img">
+            <img src="Profile Picture-min-modified.png" alt="">
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+
+        <h2 class="heading">Contact <span>Me</span>
+            <hr id="hrtag">
+        </h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Phone Number">
+                <input type="text" placeholder="Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="Submit" value="Send Message" class="btn">
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class='fa-brands fa-linkedin-in'></i></a>
+            <a href="#"><i class='fa-brands fa-instagram'></i></a>
+            <a href="#"><i class='fa-brands fa-github'></i></a>
+            <a href="#"><i class='fa-brands fa-twitter'></i></a>
+        </div>
+        <p class="copyright">© 2024 | All Right Reserved</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
